@@ -602,6 +602,26 @@ input, textarea, select {
   color: var(--gold-dk);
   border-color: rgba(245,166,35,.3);
 }
+.prod-badge--live {
+  background: rgba(22,163,74,.1);
+  color: #15803d;
+  border-color: rgba(22,163,74,.3);
+}
+
+.prod-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin-top: .5rem;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--primary);
+  border-bottom: 1.5px solid transparent;
+  transition: color var(--dur), border-color var(--dur);
+}
+.prod-link svg { width: 14px; height: 14px; transition: transform var(--dur); }
+.prod-link:hover { color: var(--gold-dk); border-bottom-color: var(--gold-dk); }
+.prod-link:hover svg { transform: translateX(3px); }
 
 .prod-content h3 {
   font-family: var(--font-head);
