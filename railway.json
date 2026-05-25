@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "nginx -g 'daemon off;'",
+    "startCommand": "envsubst '$PORT' < /app/nginx.conf > /tmp/nginx-runtime.conf && nginx -c /tmp/nginx-runtime.conf -g 'daemon off;'",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 3
   }

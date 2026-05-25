@@ -1,8 +1,5 @@
-[phases.build]
-cmds = []
-
 [phases.setup]
-nixPkgs = ["nginx"]
+nixPkgs = ["nginx", "gettext"]
 
 [start]
-cmd = "nginx -g 'daemon off;'"
+cmd = "envsubst '$PORT' < /app/nginx.conf > /tmp/nginx-runtime.conf && nginx -c /tmp/nginx-runtime.conf -g 'daemon off;'"
