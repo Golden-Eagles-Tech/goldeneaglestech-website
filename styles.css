@@ -197,10 +197,11 @@ input, textarea, select {
   flex-shrink: 0;
 }
 .eagle-icon {
-  width: 52px;
-  height: 34px;
+  height: 42px;
+  width: auto;
   flex-shrink: 0;
-  filter: drop-shadow(0 2px 8px rgba(245,166,35,.5));
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(245,166,35,.4));
 }
 .logo-text {
   font-size: 1.05rem;
@@ -692,17 +693,18 @@ input, textarea, select {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: rotateFloat 20s linear infinite;
 }
-.about-img-placeholder svg {
-  width: 70%;
-  height: 70%;
+.about-logo-img {
+  width: 78%;
+  height: auto;
+  object-fit: contain;
+  animation: logoFloat 4s ease-in-out infinite;
+  filter: drop-shadow(0 4px 24px rgba(245,166,35,.35));
 }
-@keyframes rotateFloat {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
 }
-.about-img-placeholder svg * { animation: rotateFloat 20s linear infinite reverse; }
 
 .about-location-badge {
   position: absolute;
