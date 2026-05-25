@@ -155,7 +155,17 @@ function showToast(msg, type = 'success') {
 
     const action = form.getAttribute('action');
     if (action.includes('YOUR_FORM_ID')) {
-      showToast('Please configure Formspree in index.html first.', 'error');
+      const name    = form.querySelector('[name="name"]').value.trim();
+      const email   = form.querySelector('[name="email"]').value.trim();
+      const service = form.querySelector('[name="service"]').value;
+      const message = form.querySelector('[name="message"]').value.trim();
+      const subject = encodeURIComponent(`Inquiry from ${name} — Golden Eagles Tech`);
+      const body    = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nService: ${service || 'Not specified'}\n\n${message}`
+      );
+      window.open(`mailto:info@goldeneaglestech.com?subject=${subject}&body=${body}`, '_self');
+      showToast('Opening your email client…', 'success');
+      form.reset();
       return;
     }
 

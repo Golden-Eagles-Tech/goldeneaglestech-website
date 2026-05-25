@@ -115,7 +115,8 @@ input, textarea, select {
   color: var(--gold);
 }
 
-.btn-full { width: 100%; justify-content: center; }
+.btn-full   { width: 100%; justify-content: center; }
+.btn-submit { align-self: flex-end; min-width: 190px; }
 
 /* ── Section Header ──────────────────────── */
 .section-head {
