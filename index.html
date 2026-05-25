@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Golden Eagles Tech LLC — Transforming Complex Data into Intelligent Software. Custom software development, AI/ML analytics, and IT program management in Round Rock, TX." />
+  <meta property="og:title" content="Golden Eagles Tech LLC" />
+  <meta property="og:description" content="Transforming Complex Data into Intelligent Software." />
+  <meta property="og:type" content="website" />
+  <title>Golden Eagles Tech LLC | Intelligent Software Engineering</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <svg class="eagle-icon" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="28" cy="30" rx="7" ry="10" fill="#F5A623"/>
+          <circle cx="28" cy="14" r="6" fill="#F5A623"/>
+          <path d="M28 18 L34 21 L28 24 Z" fill="#D4880C"/>
+          <path d="M21 26 L2 18 L6 30 L21 31 Z" fill="#F5A623"/>
+          <path d="M35 26 L54 18 L50 30 L35 31 Z" fill="#F5A623"/>
+          <path d="M22 39 L28 47 L34 39 Z" fill="#D4880C"/>
+          <circle cx="25" cy="12" r="1.5" fill="#0D2137"/>
+        </svg>
+        <span class="logo-text">Golden Eagles <span class="logo-gold">Tech</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-eagle-bg" aria-hidden="true">
+      <svg viewBox="0 0 400 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="200" cy="220" rx="55" ry="80" fill="white" opacity="0.04"/>
+        <circle cx="200" cy="100" r="50" fill="white" opacity="0.04"/>
+        <path d="M200 130 L245 155 L200 180 Z" fill="white" opacity="0.04"/>
+        <path d="M145 195 L10 130 L40 215 L145 220 Z" fill="white" opacity="0.04"/>
+        <path d="M255 195 L390 130 L360 215 L255 220 Z" fill="white" opacity="0.04"/>
+        <path d="M155 295 L200 355 L245 295 Z" fill="white" opacity="0.04"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Round Rock, TX &nbsp;·&nbsp; Est. 2024
+      </div>
+      <h1 class="hero-title">
+        Transforming Complex Data<br/>
+        into <em class="gold-italic">Intelligent Software</em>
+      </h1>
+      <p class="hero-sub">
+        We empower businesses with innovative, secure, and scalable IT solutions —
+        from custom software and AI/ML analytics to end-to-end program management.
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-gold">Explore Services</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hstat-n">3+</span>
+          <span class="hstat-l">Core Services</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-n">2</span>
+          <span class="hstat-l">Products in Dev</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-n">100%</span>
+          <span class="hstat-l">Custom Built</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#services" class="hero-scroll" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-badge">What We Do</span>
+        <h2 class="section-title">Our <span class="text-gold">Services</span></h2>
+        <p class="section-sub">
+          We build secure, scalable, data-driven solutions — not templates.
+          Every engagement carries our product ownership mindset.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <div class="svc-card reveal" style="--delay: 0s">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+              <line x1="12" y1="2" x2="12" y2="22" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3>Custom Software &amp; Mobile Development</h3>
+          <p>Full-stack web applications and native/cross-platform mobile apps built with modern, battle-tested technologies.</p>
+          <ul class="svc-list">
+            <li>React, Angular, Node.js, Python</li>
+            <li>iOS &amp; Android (native + cross-platform)</li>
+            <li>Cloud infrastructure &amp; API integration</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 — featured -->
+        <div class="svc-card svc-card--featured reveal" style="--delay: 0.12s">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+            </svg>
+          </div>
+          <div class="featured-label">Most Requested</div>
+          <h3>AI &amp; Machine Learning Analytics</h3>
+          <p>Unlock the power of your data with predictive models, NLP, and executive-grade business intelligence dashboards.</p>
+          <ul class="svc-list">
+            <li>Predictive analytics &amp; data modeling</li>
+            <li>Natural Language Processing</li>
+            <li>Business intelligence dashboards</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="svc-card reveal" style="--delay: 0.24s">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4"/>
+              <path d="M7 8h4M7 12h10"/>
+            </svg>
+          </div>
+          <h3>IT Program &amp; Project Management</h3>
+          <p>End-to-end technical project oversight and digital transformation delivery with rigorous quality assurance.</p>
+          <ul class="svc-list">
+            <li>End-to-end technical oversight</li>
+            <li>Digital transformation delivery</li>
+            <li>Quality assurance &amp; compliance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-badge">What We're Building</span>
+        <h2 class="section-title">Our <span class="text-gold">Products</span></h2>
+        <p class="section-sub">
+          We don't just build for clients — we build our own. These proprietary platforms reflect our commitment to innovation.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Past of Today -->
+        <div class="prod-card reveal" style="--delay: 0s">
+          <div class="prod-image prod-image--history">
+            <div class="prod-image-overlay"></div>
+            <div class="prod-image-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="28" stroke="#F5A623" stroke-width="2" stroke-dasharray="6 3"/>
+                <path d="M32 16 v16 l10 8" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="32" cy="32" r="3" fill="#F5A623"/>
+              </svg>
+            </div>
+          </div>
+          <div class="prod-content">
+            <div class="prod-badge">Coming Soon</div>
+            <h3>Past of Today</h3>
+            <p class="prod-type">Crowdsourced Historical Events Platform</p>
+            <p>A community-powered platform that surfaces and contextualizes historical events happening "on this day" — making history interactive, verifiable, and alive.</p>
+            <div class="prod-tags">
+              <span>Crowdsourcing</span>
+              <span>History</span>
+              <span>Community</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flux Datum -->
+        <div class="prod-card reveal" style="--delay: 0.15s">
+          <div class="prod-image prod-image--ai">
+            <div class="prod-image-overlay"></div>
+            <div class="prod-image-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none">
+                <rect x="8" y="40" width="8" height="16" rx="2" fill="#F5A623" opacity="0.9"/>
+                <rect x="20" y="28" width="8" height="28" rx="2" fill="#F5A623"/>
+                <rect x="32" y="18" width="8" height="38" rx="2" fill="#F5A623"/>
+                <rect x="44" y="10" width="8" height="46" rx="2" fill="#F5A623" opacity="0.8"/>
+                <path d="M8 32 Q20 20 32 28 Q44 36 56 12" stroke="#fff" stroke-width="2" stroke-dasharray="4 2" fill="none"/>
+              </svg>
+            </div>
+          </div>
+          <div class="prod-content">
+            <div class="prod-badge prod-badge--gold">Coming Soon</div>
+            <h3>Flux Datum</h3>
+            <p class="prod-type">AI-Driven Multi-Cloud Analytics Platform</p>
+            <p>Built from the ground up for the multi-cloud world — Flux Datum delivers real-time AI analytics, seamless data pipeline management, and unified intelligence across cloud environments.</p>
+            <div class="prod-tags">
+              <span>AI/ML</span>
+              <span>Multi-Cloud</span>
+              <span>Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-image-wrap">
+            <div class="about-img-placeholder">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Stylized circuit/eagle illustration -->
+                <circle cx="100" cy="100" r="90" fill="#1A3C6E" opacity="0.15" stroke="#2E5FA3" stroke-width="1"/>
+                <circle cx="100" cy="100" r="60" fill="#1A3C6E" opacity="0.15" stroke="#2E5FA3" stroke-width="1"/>
+                <circle cx="100" cy="100" r="30" fill="#F5A623" opacity="0.2"/>
+                <!-- Eagle silhouette center -->
+                <ellipse cx="100" cy="108" rx="14" ry="20" fill="#F5A623" opacity="0.7"/>
+                <circle cx="100" cy="82" r="12" fill="#F5A623" opacity="0.7"/>
+                <path d="M100 91 L112 96 L100 101 Z" fill="#D4880C" opacity="0.8"/>
+                <path d="M86 102 L52 88 L60 108 L86 110 Z" fill="#F5A623" opacity="0.7"/>
+                <path d="M114 102 L148 88 L140 108 L114 110 Z" fill="#F5A623" opacity="0.7"/>
+                <path d="M88 126 L100 142 L112 126 Z" fill="#D4880C" opacity="0.8"/>
+                <!-- Circuit lines -->
+                <line x1="10" y1="100" x2="40" y2="100" stroke="#F5A623" stroke-width="1.5" opacity="0.4"/>
+                <line x1="160" y1="100" x2="190" y2="100" stroke="#F5A623" stroke-width="1.5" opacity="0.4"/>
+                <line x1="100" y1="10" x2="100" y2="40" stroke="#F5A623" stroke-width="1.5" opacity="0.4"/>
+                <line x1="100" y1="160" x2="100" y2="190" stroke="#F5A623" stroke-width="1.5" opacity="0.4"/>
+                <circle cx="40" cy="100" r="3" fill="#F5A623" opacity="0.5"/>
+                <circle cx="160" cy="100" r="3" fill="#F5A623" opacity="0.5"/>
+                <circle cx="100" cy="40" r="3" fill="#F5A623" opacity="0.5"/>
+                <circle cx="100" cy="160" r="3" fill="#F5A623" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="about-location-badge">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M10 1C6.7 1 4 3.7 4 7c0 5 6 12 6 12s6-7 6-12c0-3.3-2.7-6-6-6z"/>
+                <circle cx="10" cy="7" r="2.5"/>
+              </svg>
+              Round Rock, TX
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal" style="--delay: 0.1s">
+          <span class="section-badge">Who We Are</span>
+          <h2 class="section-title">Your Vision <span class="text-gold">Engineered</span> with Intelligence</h2>
+          <p class="about-lead">
+            Golden Eagles Tech LLC is a Round Rock-based engineering firm built by highly skilled professionals in software development, cloud computing, and cybersecurity.
+          </p>
+          <p class="about-body">
+            What sets us apart is our <strong>ownership mindset</strong>. We don't just take requirements — we build proprietary products alongside client work, bringing real product thinking to every engagement. Every solution we deliver is secure, scalable, and data-driven.
+          </p>
+
+          <div class="pillars">
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Secure by Design</h4>
+                <p>Security is built in, not bolted on.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Scalable Architecture</h4>
+                <p>Systems designed to grow with your business.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Data-Driven</h4>
+                <p>Every decision backed by intelligence.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-gold">Work With Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-badge">Get in Touch</span>
+        <h2 class="section-title">Let's Build <span class="text-gold">Something Great</span></h2>
+        <p class="section-sub">
+          Ready to transform your idea into reality? Drop us a message and we'll respond within 24 hours.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="cinfo-item">
+            <div class="cinfo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:info@goldeneaglestech.com">info@goldeneaglestech.com</a>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <span>Round Rock, TX</span>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Response Time</h4>
+              <span>Within 24 hours</span>
+            </div>
+          </div>
+
+          <div class="cinfo-card">
+            <h4>Why Work With Us?</h4>
+            <ul>
+              <li>Ownership mindset on every project</li>
+              <li>Secure, scalable solutions by default</li>
+              <li>AI-first engineering approach</li>
+              <li>Transparent, agile delivery</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Formspree Form — replace YOUR_FORM_ID with your Formspree form ID -->
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="--delay: 0.1s">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="fname" name="name" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="femail" name="email" placeholder="jane@company.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fservice">Service of Interest</label>
+            <select id="fservice" name="service">
+              <option value="">Select a service...</option>
+              <option value="custom-software">Custom Software Development</option>
+              <option value="ai-ml">AI &amp; ML Analytics</option>
+              <option value="it-pm">IT Program Management</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message <span aria-hidden="true">*</span></label>
+            <textarea id="fmessage" name="message" rows="5" placeholder="Tell us about your project or inquiry..." required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="New inquiry from goldeneaglestech.com" />
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <button type="submit" class="btn btn-gold btn-full" id="submitBtn">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" style="margin-bottom:1rem; display:inline-flex;">
+            <svg class="eagle-icon" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <ellipse cx="28" cy="30" rx="7" ry="10" fill="#F5A623"/>
+              <circle cx="28" cy="14" r="6" fill="#F5A623"/>
+              <path d="M28 18 L34 21 L28 24 Z" fill="#D4880C"/>
+              <path d="M21 26 L2 18 L6 30 L21 31 Z" fill="#F5A623"/>
+              <path d="M35 26 L54 18 L50 30 L35 31 Z" fill="#F5A623"/>
+              <path d="M22 39 L28 47 L34 39 Z" fill="#D4880C"/>
+              <circle cx="25" cy="12" r="1.5" fill="#0D2137"/>
+            </svg>
+            <span class="logo-text" style="color:#fff;">Golden Eagles <span class="logo-gold">Tech</span></span>
+          </a>
+          <p class="footer-tagline">Transforming Complex Data into Intelligent Software.</p>
+          <p class="footer-location">Round Rock, TX &nbsp;·&nbsp; <a href="mailto:info@goldeneaglestech.com">info@goldeneaglestech.com</a></p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Custom Software Dev</a></li>
+            <li><a href="#services">AI &amp; ML Analytics</a></li>
+            <li><a href="#services">IT Program Management</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#products">Past of Today</a></li>
+            <li><a href="#products">Flux Datum</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="mailto:info@goldeneaglestech.com">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Golden Eagles Tech LLC. All rights reserved.</p>
+        <p>Built with &hearts; in Round Rock, TX</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
