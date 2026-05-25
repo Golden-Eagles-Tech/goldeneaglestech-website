@@ -60,13 +60,21 @@ npx serve .
 
 ## Deployment (Railway)
 
-This site is deployed as a static site on Railway.
+This site is deployed as a static site on Railway via Nginx.
 
-- **GitHub Repo:** `Golden-Eagles-Tech/goldeneaglestech-website`
-- **Railway Project:** `goldeneaglestech-website`
-- **Service type:** Static (Nginx)
+- **Live URL:** https://website-production-69fd.up.railway.app
+- **GitHub Repo:** https://github.com/Golden-Eagles-Tech/goldeneaglestech-website
+- **Railway Project:** https://railway.com/project/7a2c8fce-636a-4e64-a310-61ca92be7032
+- **Service type:** Static (Nixpacks + Nginx)
 
-Railway auto-deploys on every push to `main`.
+### Redeploy after changes
+
+```bash
+cd website/
+railway up --service website --detach -m "describe your change"
+```
+
+Or connect the GitHub repo in the Railway dashboard for automatic deploys on every push to `main`.
 
 ## Color Palette
 
