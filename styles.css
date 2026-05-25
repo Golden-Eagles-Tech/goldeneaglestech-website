@@ -619,7 +619,7 @@ input, textarea, select {
   border-bottom: 1.5px solid transparent;
   transition: color var(--dur), border-color var(--dur);
 }
-.prod-link svg { width: 14px; height: 14px; transition: transform var(--dur); }
+.prod-link svg { width: 1em; height: 1em; flex-shrink: 0; stroke-width: 1.5px; transition: transform var(--dur); }
 .prod-link:hover { color: var(--gold-dk); border-bottom-color: var(--gold-dk); }
 .prod-link:hover svg { transform: translateX(3px); }
 
